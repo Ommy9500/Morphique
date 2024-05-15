@@ -58,7 +58,7 @@ def run():
         ssl_verify = False if server_name == '0.0.0.0' else True
         with gr.Blocks(title=f'{roop.metadata.name} {roop.metadata.version}', theme=roop.globals.CFG.selected_theme, css=mycss) as ui:
             with gr.Row(variant='compact'):
-                    gr.Markdown(f"### [{roop.metadata.name} {roop.metadata.version}](https://github.com/C0untFloyd/roop-unleashed)")
+                    gr.Markdown(f"### [{roop.metadata.name} {roop.metadata.version}](https://morphique.wixstudio.io/face-swap)")
                     gr.HTML(util.create_version_html(), elem_id="versions")
             faceswap_tab()
             livecam_tab()
